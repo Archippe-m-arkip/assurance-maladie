@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300..700&family=Fira+Code:wght@300..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch+Pop&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primaryOrange: #fff7e7;
+  --primaryBlue: #f8f7ff;
+  --secondaryBlue: #6357ff;
+  --secondaryOrange: #dc8000;
+  --col1: #f84100;
+  --col2: #f9d213;
+  --third: linear-gradient(#ff0000, yellow, blue);
+  /* --third-2: var(linear(#5a57ff)  - (#00c6fb));
+  --tre-2: linear-gradient(); */
+}
+
+@layer components {
+  .gradient-blue {
+    @apply text-white bg-gradient-to-r  bg-[#00c6fb] from-[#5a57ff];
+    transition: 0.2s ease-in;
+  }
+  .gradient-blue:hover {
+    @apply text-white bg-gradient-to-r  bg-[#5a57ff] from-[#5a57ff];
+    transition: 0.1s ease-in;
+  }
+  .gradient-orange {
+    @apply bg-gradient-to-r bg-[#f9cf13] from-[#f89100] text-white;
+    transition: 0.2s ease-in;
+  }
+  .gradient-orange:hover {
+    @apply bg-gradient-to-r bg-[#f89100] from-[#f89100] text-white;
+    transition: 0.1s ease-in;
+  }
+  .gradient-purple {
+    @apply bg-gradient-to-r from-[#b013f9] to-[#ca8ff6] text-white;
+    transition: 0.2s ease-in;
+  }
+  .gradient-purple:hover {
+    @apply bg-gradient-to-r from-[#b013f9] to-[#b013f9]  text-white;
+    transition: 0.1s ease-in;
+  }
+
+  .third-col {
+    /* --third-1: linear-gradient(#f84100, #f9d213, to right); */
+    @apply bg-gradient-to-r bg-[#f9cf13] from-[#f89100];
+  }
+  .btn {
+    @apply xl:px-8 xl:py-3 lg:px-7 lg:py-2 px-5 py-2 text-sm md:text-base  rounded-lg font-bold h-auto w-auto;
+  }
+  .enable {
+    @apply bg-[#f89100] text-white;
+    transition: 0.1s ease-in;
+  }
+  .disable {
+    @apply border border-[#f89100] hover:bg-[#ffebcf] text-[#f89100];
+    transition: 0.2s;
+  }
+  .enable:hover {
+    @apply bg-[--secondaryOrange];
+    transition: 0.2s ease-in;
+  }
+
+  /* fin des boutons */
+  .navbar {
+    @apply bg-[--primaryBlue];
+  }
+  .navbar .links a {
+    @apply font-semibold hover:text-[--secondaryBlue];
+  }
+
+  .title_section {
+    @apply py-1 md:py-1 lg:py-1 xl:py-1 2xl:py-1;
+  }
+
+  .box {
+    @apply w-20 h-20 border mb-10 ml-4 rounded-md;
+  }
+
+  .box1 {
+    @apply bg-[#6357ff];
+  }
+  .box2 {
+    @apply bg-gradient-to-l bg-[#f84100] from-[#f9d213];
+  }
+
+  .box3 {
+    @apply bg-gradient-to-r  bg-[#00c6fb] from-[#5a57ff];
+  }
+  .box4 {
+    @apply bg-[#6357ff];
+  }
+
+  .box5 {
+    @apply bg-gradient-to-r from-[#051937] bg-[#00c6fb];
+  }
+
+  .box6 {
+    @apply bg-[#f8f7ff];
+  }
+  .box7 {
+    @apply bg-[#5a57ff];
+  }
+  .box8 {
+    @apply bg-[#7E71FF];
+  }
+  .box9 {
+    @apply bg-[#A08DFF];
+  }
+  .box10 {
+    @apply bg-[#C1A9FF];
+  }
+  .box11 {
+    @apply bg-[#E2C6FF];
+  }
+  .box13 {
+    @apply bg-[#222222];
+  }
+
+  .titre {
+    @apply bg-gradient-to-br  bg-[#00c6fb] from-[#5a57ff] text-transparent bg-clip-text;
+  }
+  .categorie {
+    transition: 0.3s;
+  }
+  .categorie:hover {
+    transition: 0.3s;
+  }
+  .card {
+    transition: 0.2s;
+  }
+  .card:hover {
+    transition: 0.2s;
+  }
+  .card h4 {
+    @apply font-bold content-center;
+  }
+  .card ul {
+    @apply text-xs lg:text-sm xl:text-sm;
+  }
+  /* .about .bg-img {
+    z-index: -1;
+  } */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.pattern-1 {
+  background: radial-gradient(circle, #468ee3 10%, transparent 11%);
+  background-size: 1em 1em;
+  background-color: transparent;
+  background-clip: image;
+  opacity: 1;
+}
+.about .left img {
+  filter: drop-shadow(7px 7px 10px rgba(4, 4, 4, 0.4));
+}
+
+.planning {
+  background-image: url("../../assets/shapes/donut_3d_shape\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  background-size: 10%;
+}
