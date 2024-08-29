@@ -14,12 +14,14 @@
     <nav class=" navbar w-full h-[4.5rem]  shadow-md shadow-black/10 backdrop-blur-lg border-b fixed z-50">
         <div
             class="w-full h-full flex justify-between items-center bg-[--primary-blue] rounded-md lg:px-12 md:px-10 px-3 py-1">
-            <div class="logo flex justify-center items-center">
-                <div
-                    class=" flex justify-center items-center h-14 w-14 rounded-full text-orange-400 text-center content-center border text-xl font-extrabold">
-                    AM</div>
-                <p class="md:pl-5 pl-3 md:text-xl text-lg  font-bold">Assurance Maladie</p>
-            </div>
+            <a href="#home">
+                <div class="logo flex justify-center items-center">
+                    <div
+                        class=" flex justify-center items-center h-14 w-14 border-2 border-blue-100 rounded-full text-orange-300 text-center content-center  bg-gradient-to-br from-blue-100/70 via-blue-100/60 to-blue-300 text-xl font-extrabold">
+                        AM</div>
+                    <p class="md:pl-5 pl-3 md:text-xl text-lg  font-bold">Assurance Maladie</p>
+                </div>
+            </a>
 
             <div class="flex  lg:gap-14 md:gap-9 gap-4 h-full w-auto items-center text-sm md:text-base">
                 <ul class="links  justify-center items-center hidden gap-4 md:flex md:gap-6 lg:gap-14 ">
@@ -31,7 +33,7 @@
                 <div>
                     <button class="md:flex hidden btn enable">Commencer</button>
 
-                    <svg class="md:hidden ham1  bg-slate-100 content-center rounded-md" width="32px" height="32px"
+                    <svg class="md:hidden  bg-slate-100 content-center rounded-md" width="32px" height="32px"
                         viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="a" d="M5 7H19" stroke="#000000" stroke-width="3" stroke-linecap="round"
                             stroke-linejoin="round" />
@@ -40,8 +42,8 @@
                         <path class="c" d="M5 17L19 17" stroke="#000000" stroke-width="3" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
-                    <svg class=" ham2 hidden lg:hidden bg-slate-100 content-center rounded-md" height="32px"
-                        width="32px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="hidden md:hidden bg-slate-100 content-center rounded-md" height="32px" width="32px"
+                        viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>cancel</title>
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -85,7 +87,7 @@
                         <span class="w-auto  flex-nowrap  ">Votre assurance</span>
                     </p>
                     <h1
-                        class="titre text-center md:text-start 2xl:text-7xl xl:text-[3.6rem] lg:text-5xl md:text-4xl text-4xl md:py-5 font-[1000] ">
+                        class="titre text-center md:text-start 2xl:text-7xl xl:text-[3.6rem] lg:text-5xl md:text-4xl text-[2.5rem] md:py-5  ">
                         Nous assurons votre bien
                         être pour
                         toute
@@ -125,7 +127,7 @@
 
                 </div>
                 <div
-                    class="flex flex-col justify-center absolute max-w-screen-sm md:w-auto h-auto p-5 bg-blue-50/45 border backdrop-blur-lg rounded-lg bottom-16 2xl:bottom-36  md:right-[22%] lg:right-[25%] 2xl:right-[37%] self-center md:self-auto gap-3 md:gap-4 shadow-2xl">
+                    class="flex flex-col justify-center absolute max-w-screen-sm md:w-auto h-auto p-5 bg-blue-50/45 border backdrop-blur-lg rounded-lg bottom-6 md:bottom-16 2xl:bottom-36  md:right-[22%] lg:right-[25%] 2xl:right-[37%] self-center md:self-auto gap-3 md:gap-4 shadow-2xl">
                     <p
                         class="flex w-max gap-2 items-center py-1 px-2 lg:p-2 lg:px-3 rounded-full bg-blue-100/50 text-gray-800 backdrop-blur-lg 2xl:text-sm md:text-sm text-xs">
                         <span><img class="h-4 md:h-5" src="../assets/images/verified-svgrepo-com.svg"
@@ -262,7 +264,7 @@
 
                 </div>
                 <div
-                    class="right relative w-full h-[40vh] md:h-[50vh]  flex flex-col justify-between md:w-2/5 lg:w-1/3  mt-10 md:mt-0 z-20  ">
+                    class="right relative w-full h-auto md:h-[50vh]  flex flex-col justify-between md:w-2/5 lg:w-1/3  mt-10 md:mt-0 z-20  ">
                     <p
                         class="hidden md:flex z-10 items-center justify-center self-center md:self-start text-xs lg:text-sm text-[#3c38fe] bg-[#9a99ff]/20 md:bg-none px-3  md:py-1 rounded-full font-semibold  max-w-max">
                         <svg class="w-[70px] h-8  font-bold " viewBox="0 0 24.00 24.00" fill="none"
@@ -282,36 +284,43 @@
                         <span class="w-auto  flex-nowrap">A propos de nous</span>
                     </p>
                     <div
-                        class="w-full h-full flex flex-col justify-evenly items-center md:items-start  rounded-lg z-20 pt-6 ">
+                        class="w-full h-full flex flex-col justify-evenly items-center md:items-start space-y-4 rounded-lg z-20 pt-6 ">
                         <h3
-                            class="text-center md:text-start text-[#444] 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-xl font-bold">
+                            class="text-center md:text-start text-[#444] 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-xl font-extrabold">
                             Une entreprise facilitatrice des traitements <span
                                 class="text-orange-400 2xl:text-7xl md:text-4xl text-4xl">.</span>
                         </h3>
-                        <div class="flex flex-col h-full justify-evenly w-auto md:w-full ">
+                        <div class="flex flex-col h-full space-y-4 justify-evenly w-auto md:w-full ">
 
-                            <div>
-                                <h4 class="font-semibold 2xl:text-base">Notre soucis est de rendre une vie facile</h4>
-                                <p class="text-gray-500 text-xs md:text-sm ">Toute personne peu importe ses moyens, avec
+                            <div class="space-y-1">
+                                <h4 class=" text-center md:text-start  2xl:text-base">Notre soucis est de
+                                    rendre une vie facile</h4>
+                                <p class="text-gray-500  text-center md:text-start text-sm md:text-sm ">Toute personne
+                                    peu importe ses moyens, avec
                                     nous aura un module qui correspond
                                     .</p>
                             </div>
-                            <div>
-                                <h4 class="font-semibold 2xl:text-base">Nous prestons des services d'assurance etudiant
+                            <div class="space-y-1">
+                                <h4 class="  text-center md:text-start 2xl:text-base">Nous prestons des
+                                    services d'assurance etudiant
                                     et autres personnes</h4>
-                                <p class="text-gray-500 text-xs md:text-sm ">Qui que vous soyez Lorem ipsum dolor sit
+                                <p class="text-gray-500 text-center md:text-start  text-sm md:text-sm ">Qui que vous
+                                    soyez Lorem ipsum dolor sit
                                     amet
                                     consectetur.</p>
                             </div>
-                            <div>
-                                <h4 class="font-semibold 2xl:text-base">Avec une experience de plus de 5ans</h4>
-                                <p class="text-gray-500 text-xs md:text-sm ">Dans le domaine d'assurance, nous avons
+                            <div class="space-y-1 pb-5">
+                                <h4 class=" text-center md:text-start  2xl:text-base">Avec une experience
+                                    de plus de 5ans</h4>
+                                <p class="text-gray-500  text-center md:text-start text-sm md:text-sm ">Dans
+                                    le domaine
+                                    d'assurance, nous avons
                                     preste plusieurs services
                                     consectetur.</p>
                             </div>
                         </div>
                         <button
-                            class="btn self-center md:self-start  max-w-max gradient-blue shadow-xl shadow-blue-400/30">Savoir
+                            class=" btn self-center md:self-start  max-w-max gradient-blue shadow-xl shadow-blue-400/30">Savoir
                             plus</button>
 
                     </div>
@@ -359,10 +368,10 @@
                         <h3
                             class="text-center content-center   text-[#444] 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-xl font-bold">
                             Choisissez le plan qui vous convient</h3>
-                        <p class="text-center text-lg text-gray-500 px-14">
+                        <p class="text-center text-sm md:text-base text-gray-500 md:px-14 p-3">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus reiciendis sed maxime
                             culpa voluptas aliquam incidunt voluptatum repudiandae non impedit, nostrum, provident
-                            necessitatibus, tempora quod dolorum odio ipsam harum nisi?
+                            necessitatibus
                         </p>
                     </div>
 
@@ -372,16 +381,16 @@
 
 
                         <div
-                            class="w-[25rem] h-auto card border border-solid border-[#5a57ff]/20 hover:border-[#5a57ff] hover:shadow-2xl hover:scale-[1.015] hover:shadow-slate-700/30 rounded-lg flex flex-col justify-between gap-5 overflow-hidden bg-white">
+                            class="max-w-[25rem] h-auto card border border-solid border-[#5a57ff]/20 hover:border-[#5a57ff] hover:shadow-2xl hover:scale-[1.015] hover:shadow-slate-700/30 rounded-lg flex flex-col justify-between gap-5 overflow-hidden bg-white">
                             <h4 class="w-full p-1 bg-[#5a57ff] content-center text-center text-white text-bold"> Title
                             </h4>
                             <div class="w-full px-5 py-6 space-y-6 flex flex-col items-center ">
-                                <p class="space-x-4 text-[#444444]"><s>132 000fbu</s><span
+                                <p class="space-x-4 text-[#444444] text-center"><s>132 000fbu</s><span
                                         class="text-[#5a57ff] font-bold bg-[#5a57ff]/15 p-[0.25rem] px-2 rounded-sm">Economisez
                                         9%</span>
                                 </p>
                                 <p
-                                    class="xl:text-5xl lg:text-4xl md:text-3xl text-5xl font-extrabold  drop-shadow-lg   text-[#444444]">
+                                    class="xl:text-5xl lg:text-4xl md:text-3xl text-5xl font-extrabold  drop-shadow-lg   text-[#444444] text-center">
                                     50
                                     000fbu<span class="text-sm">/mois</span></p>
                             </div>
@@ -549,17 +558,17 @@
 
                         </div>
                         <div
-                            class="w-[25rem] h-auto card border border-[#f89100]/20 hover:border-[#f89100] hover:shadow-2xl hover:scale-[1.015] hover:shadow-slate-700/30 rounded-lg flex flex-col justify-between gap-5 overflow-hidden bg-white">
+                            class="max-w-[25rem] h-auto card border border-[#f89100]/20 hover:border-[#f89100] hover:shadow-2xl hover:scale-[1.015] hover:shadow-slate-700/30 rounded-lg flex flex-col justify-between gap-5 overflow-hidden bg-white">
                             <h4 class="w-full p-1 bg-[#f89100] content-center text-center text-white text-extrabold">
                                 Title
                             </h4>
                             <div class="w-full px-5 py-6 space-y-6 flex flex-col items-center ">
-                                <p class="space-x-4 text-[#444444]"><s>132 000fbu</s><span
+                                <p class="space-x-4 text-[#444444] text-center"><s>132 000fbu</s><span
                                         class="text-[#f89100] font-bold bg-[#f89100]/15 p-[0.25rem] px-2 rounded-sm">Economisez
                                         9%</span>
                                 </p>
                                 <p
-                                    class="xl:text-5xl lg:text-4xl md:text-3xl text-5xl font-extrabold  drop-shadow-lg   text-[#444444]">
+                                    class="xl:text-5xl lg:text-4xl md:text-3xl text-5xl font-extrabold  drop-shadow-lg   text-[#444444] text-center">
                                     50
                                     000fbu<span class="text-sm">/mois</span></p>
                             </div>
@@ -727,16 +736,16 @@
 
                         </div>
                         <div
-                            class="w-[25rem] h-auto card border border-[#b013f9]/20 hover:border-[#b013f9] hover:shadow-2xl hover:scale-[1.015] hover:shadow-slate-700/30 rounded-lg flex flex-col justify-between gap-5 overflow-hidden bg-white">
+                            class="max-w-[25rem] h-auto card border border-[#b013f9]/20 hover:border-[#b013f9] hover:shadow-2xl hover:scale-[1.015] hover:shadow-slate-700/30 rounded-lg flex flex-col justify-between gap-5 overflow-hidden bg-white">
                             <h4 class="w-full p-1 bg-[#b013f9] content-center text-center text-white text-bold"> Title
                             </h4>
                             <div class="w-full px-5 py-6 space-y-6 flex flex-col items-center ">
-                                <p class="space-x-4 text-[#444444]"><s>132 000fbu</s><span
+                                <p class="space-x-4 text-[#444444] text-center"><s>132 000fbu</s><span
                                         class="text-[#b013f9] font-bold bg-[#b013f9]/15 p-[0.25rem] px-2 rounded-sm">Economisez
                                         9%</span>
                                 </p>
                                 <p
-                                    class="xl:text-5xl lg:text-4xl md:text-3xl text-5xl font-extrabold  drop-shadow-lg   text-[#444444]">
+                                    class="xl:text-5xl lg:text-4xl md:text-3xl text-5xl font-extrabold  drop-shadow-lg   text-[#444444] text-center">
                                     70
                                     000fbu<span class="text-sm">/mois</span></p>
                             </div>
@@ -915,7 +924,7 @@
             <div
                 class="h-auto w-full flex flex-col-reverse md:flex-row md:justify-evenly bg-gradient-to-br from-[#ffffffc9] via-[#f1d3ff30] to-[#b0c5ff35] pt-20 pb-20 px-6 md:px-10 lg:px-12 2xl:px-28 ">
                 <div class="left h-auto w-full md:w-3/6 flex flex-col justify-evenly  ">
-                    <div class="title gap-6  flex-col pb-10 hidden md:flex">
+                    <div class="title gap-6  flex-col pb-10 hidden md:flex  ">
                         <p
                             class="title_section flex  md:mb-auto items-center text-xs lg:text-sm text-[#ad32ff] bg-[#ad32ff1e] md:bg-none px-3 self-center md:self-start md:py-1 rounded-full font-semibold  max-w-max">
                             <svg class="w-[70px] h-8  font-bold " viewBox="0 0 24.00 24.00" fill="none"
@@ -935,15 +944,14 @@
                             <span class="w-auto  flex-nowrap  ">Plans d'assurance</span>
                         </p>
                         <h3
-                            class="text-center md:text-start content-center   text-[#444] 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-xl font-bold">
+                            class="text-center md:text-start content-center  text-[#444] 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-xl font-bold">
                             La carte engagement des membres</h3>
-                        <p class="text-center md:text-start text-lg text-gray-500 px-14 md:px-0">
+                        <p class="text-center md:text-start text-sm md:text-base text-gray-500 md:px-0">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis modi, tempore
                             sapiente
-
                         </p>
                     </div>
-                    <div class="explain_card flex flex-col gap-7 pt-5 h-full">
+                    <div class="explain_card flex flex-col gap-7 pt-5 h-full ">
                         <div class="flex gap-4 p-2 rounded-md w-full bg-[#db87ff]/5 items-center">
                             <div
                                 class="flex justify-center items-center border border-[#b507ff] w-16 h-16 rounded-md bg-purple-400/15">
@@ -954,7 +962,7 @@
                                         fill-rule="evenodd" />
                                 </svg>
                             </div>
-                            <div>
+                            <div class=" w-3/4">
                                 <h4 class="text-[#222] font-semibold text-base">Plan pour 3 mois</h4>
                                 <p class="text-sm text-[#555]">Lorem ipsum dolor sit amet consectetur.</p>
                             </div>
@@ -970,12 +978,13 @@
                                     </path>
                                 </svg>
                             </div>
-                            <div>
+                            <div class=" w-3/4">
                                 <h4 class="text-[#222] font-semibold text-base">Plan pour 7mois</h4>
-                                <p class="text-sm text-[#555]">Lorem ipsum dolor sit amet.</p>
+                                <p class="text-sm text-[#555]">Lorem ipsum dolor sit
+                                    inamet.</p>
                             </div>
                         </div>
-                        <div class="flex gap-4 p-2 rounded-md bg-[#db87ff]/5 items-center">
+                        <div class="flex w-auto gap-4 p-2 rounded-md bg-[#db87ff]/5 items-center">
                             <div
                                 class="flex justify-center items-center border border-[#b507ff]  w-16 h-16 rounded-md bg-purple-400/25">
                                 <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -1019,7 +1028,7 @@
                                     </g>
                                 </svg>
                             </div>
-                            <div>
+                            <div class="w-3/4">
                                 <h4 class="text-[#222] font-semibold text-base">Plan pour toute l'année</h4>
                                 <p class="text-sm text-[#555]"> Lorem ipsum, dolor sit amet consectetur adipisicing
                                     elit.</p>
@@ -1054,7 +1063,8 @@
                         <h3
                             class="text-center md:text-start content-center   text-[#444] 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-xl font-bold">
                             La carte engagement des membres</h3>
-                        <p class="text-center md:text-start text-lg text-gray-500 px-14 md:px-0">
+                        <p
+                            class="text-center md:text-start text-sm md:text-base lg:text-lg text-gray-500 px-14 md:px-0">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis modi, tempore
                             sapiente
 
@@ -1062,13 +1072,13 @@
                     </div>
                     <div
                         class=" relative  -top-3  mb-28 md:mb-0 bottom-0 2xl:h-full  2xl:w-full h-[20rem] w-[20rem] my-auto  md:mx-0  ">
-                        <img class="transform  z-10  translate-x-12 md:translate-x-16 skew-y-12 rounded-full drop-shadow-2xl shadow-slate-700"
+                        <img class="transform  z-10  translate-x-8 md:translate-x-20 translate-y-9 skew-y-12 rounded-full drop-shadow-2xl shadow-slate-700"
                             src="../assets/images/carte_credit1.png" alt="">
 
-                        <img class="absolute  z-10 top-10 translate-x-4 md:translate-x-8 skew-y-12 self-center transform translate-y-6 drop-shadow-2xl shadow-slate-700"
+                        <img class="absolute  z-10 top-10 translate-x-2 md:translate-x-8 skew-y-12 self-center transform translate-y-6 drop-shadow-2xl shadow-slate-700"
                             src="../assets/images/carte_credit1.png" alt="">
 
-                        <img class=" absolute  z-10 top-20 transform -translate-x-4 translate-y-14 skew-y-12 drop-shadow-2xl shadow-slate-700"
+                        <img class=" absolute  z-10 top-20 transform -translate-x-4 translate-y-6 skew-y-12 drop-shadow-2xl shadow-slate-700"
                             src="../assets/images/carte_credit1.png" alt="">
 
                         <span
@@ -1087,7 +1097,7 @@
                 class="relative w-[95%] h-full  mx-auto  bg-gradient-to-tr from-[#0b184c] to-[#0b3f94] rounded-xl md:rounded-3xl flex flex-col md:flex-row justify-around items-center gap-10 pt-20 pb-20 px-6 md:px-10 lg:px-12 2xl:px-24">
                 <div class="left  w-full md:w-2/6 text-white flex flex-col gap-5 ">
                     <p
-                        class="title_section flex  md:mb-auto items-center text-xs lg:text-sm text-[#32ff32] bg-[#79ff793f] md:bg-none px-3 self-start md:py-1 rounded-full font-semibold  max-w-max">
+                        class="title_section flex  md:mb-auto items-center backdrop-opacity-90  backdrop-blur-xl text-xs lg:text-sm text-[#32ff32] bg-[#79ff793f]  md:bg-none px-3 self-start md:py-1 rounded-full font-semibold  max-w-max">
                         <svg class="w-[70px] h-8  font-bold " viewBox="0 0 24.00 24.00" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
 
@@ -1141,7 +1151,7 @@
                     </span>
                 </div>
                 <div
-                    class="right relative  w-full md:w-2/5 h-full mt-5 md:mt-0  flex bg-[#a6bbffbd]/30 border border-[#a6bbff]/40 rounded-full p-[2px] text-xs md:text-sm">
+                    class="right relative  w-full md:w-2/5 h-full backdrop-blur-xl mt-5 md:mt-0  flex bg-[#a6bbffbd]/30 border border-[#a6bbff]/40 rounded-full p-[2px] text-xs md:text-sm">
                     <label class="w-full  " for=""><input
                             class="bg-transparent content-center rounded-full w-full px-5 md:px-8 py-3 my-auto md:py-6 outline-none placeholder:text-gray-200 text-white"
                             type="email" name="emali" id="email" placeholder="exemple@gmail.com"></label>
@@ -1177,20 +1187,28 @@
             </div>
         </footer> -->
 
-        <footer class=" footer h-auto pt-20 bg-gradient-to-b from-blue-6    00/15 to-blue-700/5  w-full">
-            <div class=" w-full h-full bg-o flex flex-wrap">
-                <div class="w-full  h-full  flex flex-wrap  lg:grid-cols-5 gap-10 lg:grid  grid-cols-4 p-7 ">
+        <footer class=" footer  h-auto bg-gradient-to-b overflow-hidden  w-full">
+            <div class=" w-full h-full bg-white relative  z-0 flex flex-wrap ">
+                <span
+                    class="h-[50rem] w-[10rem] -z-20 rounded-[50%] shadow-2xl bg-blue-200/40 -rotate-45 absolute right-1/2 top-0 "></span>
+                <span
+                    class="h-[10rem] w-[10rem] -z-20 rounded-full shadow-2xl bg-gradient-to-br from-blue-100/60 to-blue-200/60  absolute right-[7%] top-5 "></span>
+                <span
+                    class="h-[5rem] w-[5rem] -z-20 rounded-full shadow-2xl bg-gradient-to-br from-blue-100 to-blue-200  absolute left-3 bottom-2 "></span>
+                <div
+                    class="w-full h-full pt-20 flex flex-wrap bg-white/20  backdrop-blur-2xl  lg:grid-cols-5 gap-10 lg:grid  grid-cols-4 p-7 ">
                     <div
                         class="logo_footer lg:col-span-2 md:col-span-2 col-span-4 h-auto gap-14 flex flex-col px-6 py-4 ">
                         <div class=" w-full h-auto flex flex-col  gap-2">
                             <div class="flex gap-3 items-center">
                                 <div
-                                    class=" flex justify-center items-center h-14 w-14 rounded-full text-orange-400 text-center content-center border text-xl font-extrabold">
+                                    class=" flex justify-center items-center h-14 w-14 border-2 border-blue-100 rounded-full text-orange-300 text-center content-center   bg-gradient-to-br from-blue-100/70 via-blue-100/60 to-blue-300 text-xl font-extrabold">
                                     AM</div>
                                 <h2 class="text-orange-300 font-[800] md:text-2xl text-xl">Assurance <span
                                         class="text-[--purple-11]">Maladie</span></h2>
                             </div>
-                            <p class="w-full md:text-sm text-xs pt-1 pb-4 font-thin">Nous sommes votre assureur Lorem,
+                            <p class="w-full md:text-base text-sm pt-3 pb-4 text-gray-500">Nous sommes votre assureur
+                                Lorem,
                                 ipsum dolor
                                 sit amet consectetur adipisicing elit. Sunt quibusdam totam neque aliquam natus
                                 explicabo.</p>
@@ -1321,13 +1339,10 @@
                     </div>
                 </div>
                 <div
-                    class="text-center md:text-base text-xs pt-5 py-4 w-full text-gray-500 mx-auto content-center self-center block md:flex justify-evenly">
+                    class="text-center bg-white/20 backdrop-blur-2xl  md:text-base text-xs pt-5 py-4 px-3 w-full text-gray-500 mx-auto content-center self-center block md:flex justify-evenly">
                     <p> &copy; Copyright 2024. Assurance Maladie. Tous droits reservés
                         <?php echo (date('Y')); ?>
                     </p>
-                    <!-- <a href="mailto:lapass2023@gmail.com">
-                        <p class="md:pt-0 pt-3 text-gray-400 hover:text-gray-300">Designed by LAPASS</p>
-                    </a> -->
                 </div>
             </div>
         </footer>
